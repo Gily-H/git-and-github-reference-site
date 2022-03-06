@@ -1,0 +1,35 @@
+.home-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Logo section */
+
+.logo-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  max-width: 900px;
+  gap: 10px;
+}
+
+.logo-link {
+  background-color: rgb(133, 133, 133);
+  flex: 1;
+  height: 6px;
+}
+
+.git-logo {
+  max-height: 120px;
+}
+
+/* Text section */
+
+.home-section {
+  background-color: aliceblue;
+  margin: 2rem 0;
+  box-shadow: 1px 1px 1px black;
+}
+

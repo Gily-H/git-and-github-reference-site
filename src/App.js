@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
-import { Presentation } from "./components/pages/";
+import { Home, Presentation } from "./components/pages/";
 import { Navbar } from "./components/common/";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <div className="App">
         <Routes>
-          <Route index element={<div>Home</div>}></Route>
+          <Route index element={<Home />}></Route>
           <Route path="/presentation" element={<Presentation />}></Route>
         </Routes>
       </div>
