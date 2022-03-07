@@ -1,2 +1,3 @@
-export { default as Home } from "./Home";
-export { default as Presentation } from "./Presentation";
+export { Home } from "./home";
+export { Presentation } from "./presentation";
+export { Resources } from "./resources";

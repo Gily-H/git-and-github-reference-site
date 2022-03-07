@@ -25,16 +25,16 @@
   gap: 3rem;
   width: 65%;
   height: 100%;
-  list-style: none;
 }
 
 .nav-link {
   font-size: 1.3rem;
+  list-style: none;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   border-bottom: 4px solid red;
-}
+} */
 
 .banner a,
 .nav-link a {
