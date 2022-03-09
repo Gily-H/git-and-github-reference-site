@@ -6,7 +6,7 @@ export const GIT_RESOURCES = [
     links: [
       {
         id: "git1",
-        path: "#",
+        path: "/interactive-practice",
         linkText: "Practice Here",
       },
     ],

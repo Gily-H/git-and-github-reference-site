@@ -1,7 +1,7 @@
 import React from "react";
 import "./Resources.css";
 
-import { GIT_RESOURCES } from "./resourceInfo/gitResources";
+import { GIT_RESOURCES } from "./resourceInfo/GIT_RESOURCES";
 import { ResourceGroup } from ".";
 
 const ResourcesPage = () => {
