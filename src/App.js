@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
-import { Home, Presentation, Resources } from "./components/pages/";
+import { HomePage, PresentationPage, ResourcesPage } from "./components/pages/";
 import { Navbar } from "./components/partials/Navbar";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
       <Navbar />
       <div className="App">
         <Routes>
-          <Route index element={<Home />}></Route>
-          <Route path="/presentation" element={<Presentation />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route index element={<HomePage />}></Route>
+          <Route path="/presentation" element={<PresentationPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
         </Routes>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Presentation.css";
 
-const Presentation = () => {
+const PresentationPage = () => {
   return (
     <>
       <div id="root">
@@ -24,4 +24,4 @@ const Presentation = () => {
   );
 };
 
-export default Presentation;
+export default PresentationPage;

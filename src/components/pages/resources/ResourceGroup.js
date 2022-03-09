@@ -4,7 +4,7 @@ import { TextSection } from "../../common";
 const ResourceGroup = (props) => {
   const links = props.links.map((link) => (
     <div key={link.id}>
-      <a className="resource-link" href={link.path}>
+      <a className="resource-link" href={link.path} target="_blank" rel="noreferrer">
         {link.linkText}
       </a>
     </div>

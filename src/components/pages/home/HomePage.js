@@ -5,7 +5,7 @@ import GIT_LOGO from "../../../images/Git-Icon.png";
 import GITHUB_LOGO from "../../../images/GitHub-Icon.png";
 import "./Home.css";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="home-container">
       <div className="logo-container">
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

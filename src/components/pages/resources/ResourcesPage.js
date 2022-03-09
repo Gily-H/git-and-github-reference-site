@@ -4,7 +4,7 @@ import "./Resources.css";
 import { GIT_RESOURCES } from "./resourceInfo/gitResources";
 import { ResourceGroup } from ".";
 
-const Resources = () => {
+const ResourcesPage = () => {
   const resourceGroups = GIT_RESOURCES.map((resource) => (
     <ResourceGroup key={resource.id} title={resource.title} text={resource.text} links={resource.links} />
   ));
@@ -17,4 +17,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default ResourcesPage;
