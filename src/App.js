@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
 import { Home, Presentation, Resources } from "./components/pages/";
-import { Navbar } from "./components/common";
+import { Navbar } from "./components/partials/Navbar";
 
 function App() {
   return (

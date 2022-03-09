@@ -3,8 +3,8 @@ import { TextSection } from "../../common";
 
 const ResourceGroup = (props) => {
   const links = props.links.map((link) => (
-    <div>
-      <a key={link.id} className="resource-link" href={link.path}>
+    <div key={link.id}>
+      <a className="resource-link" href={link.path}>
         {link.linkText}
       </a>
     </div>

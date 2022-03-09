@@ -2,7 +2,7 @@ import React from "react";
 import "./Resources.css";
 
 import { GIT_RESOURCES } from "./resourceInfo/gitResources";
-import ResourceGroup from "./ResourceGroup";
+import { ResourceGroup } from ".";
 
 const Resources = () => {
   const resourceGroups = GIT_RESOURCES.map((resource) => (
