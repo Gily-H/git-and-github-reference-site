@@ -1,3 +1,3 @@
-export { Home } from "./home";
-export { Presentation } from "./presentation";
-export { Resources } from "./resources";
+export { Home } from "./Home";
+export { Presentation } from "./Presentation";
+export { Resources } from "./Resources";
