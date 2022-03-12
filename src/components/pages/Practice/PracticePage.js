@@ -1,16 +1,14 @@
 import React from "react";
+import "./Practice.css";
 
-import { GIT_PRACTICE } from "./practiceInfo/GIT_PRACTICE";
-import { PracticeSnippet } from ".";
+import { PracticeSnippets } from ".";
 
 const PracticePage = () => {
   return (
     <div className="practice-container">
-      <h2>Practice</h2>
-      <PracticeSnippet />
-      <PracticeSnippet />
-      <PracticeSnippet />
-      <PracticeSnippet />
+      <h2 className="practice-page-header">Practice</h2>
+      <hr />
+      <PracticeSnippets />
     </div>
   );
 };

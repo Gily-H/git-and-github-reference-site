@@ -1,0 +1,19 @@
+.practice-container {
+  max-width: 70%;
+  margin: auto;
+}
+
+.practice-page-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.snippet-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+
+.snippet-container img {
+  width: 30%;
+}

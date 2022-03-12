@@ -1,8 +1,8 @@
 import React from "react";
 
 import { TextSection } from "../../common";
-import GIT_LOGO from "../../../images/Git-Icon.png";
-import GITHUB_LOGO from "../../../images/GitHub-Icon.png";
+import GIT_LOGO from "../../../images/logos/Git-Icon.png";
+import GITHUB_LOGO from "../../../images/logos/GitHub-Icon.png";
 import "./Home.css";
 
 const HomePage = () => {
