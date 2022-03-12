@@ -14,7 +14,7 @@ function App() {
           <Route path="/presentation" element={<PresentationPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
 
-          <Route path="/interactive-practice" element={<PracticePage />}></Route>
+          <Route path="git/interactive-practice" element={<PracticePage />}></Route>
         </Routes>
       </div>
     </>
