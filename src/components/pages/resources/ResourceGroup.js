@@ -1,4 +1,5 @@
 import React from "react";
+
 import { TextSection } from "../../common";
 
 const ResourceGroup = (props) => {
