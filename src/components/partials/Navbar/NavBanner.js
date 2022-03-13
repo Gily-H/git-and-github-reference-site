@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBanner = () => {
   return (
-    <div className="banner">
+    <div className="nav-banner">
       <Link to="/">Git & GitHub</Link>
     </div>
   );

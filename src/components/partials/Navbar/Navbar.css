@@ -1,21 +1,25 @@
 :root {
-  --shadow: 1px 5px 8px 1px rgb(221, 221, 221);
+  --shadow_color: rgb(221, 221, 221);
+  --shadow: 1px 2px 8px 1px var(--shadow_color);
+  --nav_background_color: rgb(104, 24, 104);
+  --nav_height: 5rem;
+  --burger_button_width: 3rem;
+  --burger_line_width: 2rem;
 }
 
 .navbar {
+  background-color: var(--nav_background_color);
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: var(--nav_height);
   box-shadow: var(--shadow);
 }
 
-.banner {
-  color: black;
-  width: 20%;
-  padding: 0 1rem;
+.nav-banner {
+  width: 35%;
+  padding-left: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .nav-list {
@@ -23,8 +27,8 @@
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
-  width: 65%;
-  height: 100%;
+  width: 50%;
+  /* height: 100%; */ /* make burger entire length of window */
 }
 
 .nav-link {
@@ -32,30 +36,59 @@
   list-style: none;
 }
 
-/* .nav-link:hover {
-  border-bottom: 4px solid red;
-} */
-
-.banner a,
+.nav-banner a,
 .nav-link a {
+  color: white;
   text-decoration: none;
 }
 
-/* .subnav {
-  background-color: aliceblue;
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  box-shadow: var(--shadow);
-} */
+/* burger menu styling */
 
-@media (max-width: 700px) {
-  .nav-list {
-    width: 70%;
-    padding-right: 1rem;
+.burger-menu {
+  display: none;
+}
+
+.burger-line {
+  background-color: white;
+  margin: 0.4rem auto;
+  height: 0.3rem;
+  width: var(--burger_line_width);
+}
+
+/* display burger menu when site reaches mobile width */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
   }
 
-  .banner {
-    width: 30%;
+  .nav-banner {
+    width: 60%;
+  }
+
+  .burger-menu {
+    display: block;
+    padding-right: 4rem;
+    width: var(--burger_button_width);
+    max-height: var(--nav_height);
+    cursor: pointer;
+  }
+
+  .nav-list {
+    background-color: var(--nav_background_color);
+    position: absolute;
+    right: 0;
+    top: var(--nav_height);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    transform: translateX(100%);
+    opacity: 0%;
+    transition: 0.5s ease;
+  }
+
+  .nav-display {
+    opacity: 100%;
+    transform: translateX(0%);
   }
 }
