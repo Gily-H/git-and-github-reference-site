@@ -16,7 +16,7 @@
 }
 
 .nav-banner {
-  width: 35%;
+  width: 30%;
   padding-left: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
@@ -27,7 +27,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
-  width: 50%;
+  width: 55%;
   /* height: 100%; */ /* make burger entire length of window */
 }
 
@@ -84,11 +84,12 @@
     padding: 2rem 0;
     transform: translateX(100%);
     opacity: 0%;
-    transition: 0.5s ease;
+    z-index: 1;
   }
 
   .nav-display {
     opacity: 100%;
     transform: translateX(0%);
+    transition: 0.5s ease-out;
   }
 }

@@ -4,23 +4,28 @@ import "./Navbar.css";
 import { NavItem, NavBanner } from ".";
 
 const Navbar = () => {
-  const [burgerDisplay, setBurgerDisplay] = useState(false);
+  const [displayBurgerMenu, setDisplayBurgerMenu] = useState(false);
 
   useEffect(() => {
-    
-  }, [])
+    const hideBurgerMenu = () => {
+      if (displayBurgerMenu && window.innerWidth > 768) {
+        setDisplayBurgerMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", hideBurgerMenu);
+    return () => window.removeEventListener("resize", hideBurgerMenu);
+  }, []);
 
   const burgerHandler = () => {
-    setBurgerDisplay((prevBurgerDisplay) => !prevBurgerDisplay);
+    setDisplayBurgerMenu((prevBurgerDisplay) => !prevBurgerDisplay);
   };
-
-
 
   return (
     <>
       <nav className="navbar">
         <NavBanner />
-        <ul className={`nav-list ${burgerDisplay && "nav-display"}`}>
+        <ul className={`nav-list ${displayBurgerMenu && "nav-display"}`}>
           <NavItem path="/" text="Home" />
           <NavItem path="presentation" text="Presentation" />
           <NavItem path="resources" text="Resources" />
